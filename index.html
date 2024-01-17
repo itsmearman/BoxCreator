@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxCreator</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/script.js"></script>
+</head>
+
+<body class="d-flex justify-content-center ">
+    <div class="shadow-lg w-75 p-3 mt-3 mh-100">
+        <div class="shadow-lg w-50 p-3">
+            <p>CYOB(Create Your Own Box)</p>
+            <label for="" class="form-label">HTML Tag</label>
+            <input type="text" class="form-control" id="TagName">
+            <div class="form-text">(div ,p ,span ,...)</div>
+            <br>
+            <p>Background color</p>
+            <select name="bgcolor" id="bgcol" class="form-select">
+                <option value="black">black</option>
+                <option value="white">white</option>
+                <option value="blue">blue</option>
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="yellow">yellow</option>
+                <option value="purple">purple</option>
+                <option value="orange">orange</option>
+                <option value="brown">brown</option>
+                <option value="pink">pink</option>
+            </select>
+            <br><br>
+            <label for="Width" class="form-label">Width <span class="form-text">(px)</span></label>
+            <br>
+            <input type="number" class="form-control" id="Width">
+            <br>
+            <label for="Height" class="form-label">Height <span class="form-text">(px)</span></label>
+            <br>
+            <input type="number" id="Height" class="form-control" id="">
+            <br>
+            <label for="bord" class="form-label">Border radios <span class="form-text">(px)</span></label>
+            <br>
+            <input type="number" class="form-control" id="bord">
+            <br>
+            <label for="TagValue" class="form-label">Tag Value</label>
+            <br>
+            <input type="text" class="form-control" id="tagval">
+            <br>
+            <button type="submit" class="btn btn-primary" onclick="ghabol()">Create</button>
+        </div>
+    </div>
+    <div class="res text-center" id="creat"></div>
+</body>
+
+</html>
